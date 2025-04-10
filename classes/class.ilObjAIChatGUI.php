@@ -117,8 +117,8 @@ class ilObjAIChatGUI extends ilObjectPluginGUI
         }
 
         $tpl = $DIC['tpl'];
-        $tpl->addCss($this->plugin->getDirectory() . "/templates/default/index.css");
-        $tpl->addJavascript($this->plugin->getDirectory() . "/templates/default/index.js");
+        $tpl->addCss("Customizing/global/plugins/Services/Repository/RepositoryObject/AIChat/templates/default/index.css");
+        $tpl->addJavascript("/Customizing/global/plugins/Services/Repository/RepositoryObject/AIChat/templates/default/index.js");
 
         $apiUrl = $this->ctrl->getLinkTargetByClass("ilObjAIChatGUI", "apiCall");
 
